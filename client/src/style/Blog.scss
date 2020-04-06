@@ -1,0 +1,134 @@
+$Dbg: #132948;
+$Lbg: #485a71;
+$Dg: #c4cad1;
+$Lg: #e2e4e8;
+$Lb: #47c9e5;
+$O: #fa5d07;
+html {
+  scroll-behavior: smooth;
+}
+.rao {
+
+  h1 {
+    color: #ffffff;
+  }
+
+  hr {
+    margin: 0;
+    width: 70%;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: none;
+
+    &:hover {
+      color: #47c9e5;
+    }
+  }
+
+  .category {
+    margin-bottom: 3.125rem;
+
+    span, a {
+      font-weight: 300;
+      font-size: 16px;
+      color: $Lg;
+      background: $Lbg;
+      padding: 5px 15px;
+      margin: 5px 5px;
+
+      &:hover {
+        cursor: pointer;
+        background: $Lb;
+        color: #000;
+      }
+    }
+
+    .addPost,
+    .addPost:hover {
+      background: $O;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .category {
+      width: 300px;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  .lCard,
+  .rCard {
+    perspective: 100px;
+
+    .card {
+      color: $Dg;
+      width: 21rem;
+      margin-bottom: 50px;
+      box-shadow: 5px 2px 10px 2px #000000;
+      transition: 0.5s;
+
+      &:hover {
+        transform: matrix3d(0.995, 0, 0.00, 0, 0.00, 0.995, 0.00, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        // transform: translateZ(-.4px);
+        box-shadow: none;
+        color: $Dg;
+      }
+
+      img:hover {
+        cursor: zoom-in;
+      }
+
+      .card-text {
+        font-weight: 300;
+        color: $Dg;
+        &:hover{
+          cursor:text
+        }
+      }
+
+      .card-body {
+        &:hover {
+          cursor: pointer;
+        }
+
+        a {
+          color: $Dg;
+          text-decoration: none;
+        }
+
+        .card-title {
+          font-weight: bolder;
+          color: #000;
+
+          &:hover {
+            color: $Lb;
+          }
+        }
+
+        .card-tag a {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .cardContent {
+      flex-direction: column;
+      margin-right: 20px;
+
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .rSide {
+      padding: 20px;
+      margin-bottom: 30px;
+      order: -1;
+    }
+  }
+
+}
