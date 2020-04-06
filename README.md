@@ -15,4 +15,3 @@ AQUA是以自由潛水為主題的資訊分享結合電商購物網站包含了�
 
 [![AQUA-文章功能](http://img.youtube.com/vi/0yqDC4rGp7g/0.jpg)](https://youtu.be/0yqDC4rGp7g "AQUA-文章功能") 
 
-[![AQUA-揪團首頁及地圖展示](http://img.youtube.com/vi/RL8RmWDP3Mw/0.jpg)](http://www.youtube.com/watch?v=RL8RmWDP3Mw "AQUA-揪團首頁及地圖展示")  
