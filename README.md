@@ -12,6 +12,7 @@ AQUA是以自由潛水為主題的資訊分享結合電商購物網站包含了�
 
 ### 文章功能展示(新增、修改、評論、類型篩選)
 1. AQUA-文章功能 
-[![AQUA-文章功能](https://i9.ytimg.com/vi/0yqDC4rGp7g/mqdefault.jpg?time=1586156226366&sqp=CMSkq_QF&rs=AOn4CLC-bIOZ0zgR1XC50_Saiuk-K2l_IA)]
-(https://www.youtube.com/watch?v=0yqDC4rGp7g&feature=youtu.be"AQUA-文章功能") 
+[![AQUA-文章功能](http://img.youtube.com/vi/0yqDC4rGp7g/0.jpg)]
+(https://youtu.be/0yqDC4rGp7g"AQUA-文章功能") 
 
+[![AQUA-揪團首頁及地圖展示](http://img.youtube.com/vi/RL8RmWDP3Mw/0.jpg)](http://www.youtube.com/watch?v=RL8RmWDP3Mw "AQUA-揪團首頁及地圖展示")  
