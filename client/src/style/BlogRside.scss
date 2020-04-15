@@ -6,10 +6,11 @@ $Lb: #47c9e5;
 $O: #fa5d07;
 
   .rSide {
-    font-weight: 300;
+    // font-weight: 300;
 
     padding: 0 0 0 40px;
     p {
+            font-weight: bold;
       color: $O;
     }
 
@@ -45,6 +46,7 @@ $O: #fa5d07;
           color: $Lg;
           background-color: $Dbg;
           margin: 3px;
+          
           padding: 0px 10px 5px 10px;
         }
         .newspostTitle {
@@ -112,13 +114,21 @@ $O: #fa5d07;
       border: none;
       border-radius: 50%;
       background: $Lg;
-       
+      display: none;
     }
   }
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 768px) {
     .rSide {
       padding: 20px;
       margin-bottom: 30px;
-      order: -1;
+      order: 1;
+      p{
+        text-align: center;
+        font-size: 20px;
+      }
+      .scrolltop{
+        right: 10px;
+      }
     }
+
   }

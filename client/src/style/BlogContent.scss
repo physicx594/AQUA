@@ -5,51 +5,9 @@ $Lg: #e2e4e8;
 $Lb: #47c9e5;
 $O: #fa5d07;
 
-.titlebarFix {
-  height: 80px;
-  width: 100%;
-  background-color: $Dbg;
-}
-
-.titlebar {
-  ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  font-weight: bold;
-  height: 80px;
-  margin-bottom: 3.125rem;
-  background-color: $Lg;
-  display: flex;
-  align-items: center;
-  p {
-    margin: 0;
-    font-size: 22px;
-    // text-align: center;
-  }
-
-  .container {
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    h2 {
-      margin: 0;
-    }
-
-    a {
-      color: black;
-      text-decoration: none;
-      padding: 10px;
-    }
-  }
-}
-
 .rao {
+  font-weight: 300;
+
   ul {
     display: flex;
     list-style: none;
@@ -99,7 +57,7 @@ $O: #fa5d07;
     li {
       font-size: 18px;
       margin: 0 5px;
-      &:hover{
+      &:hover {
         cursor: pointer;
       }
     }
@@ -141,7 +99,13 @@ $O: #fa5d07;
       background: $Lg;
     }
   }
-
+  @media screen and (max-width: 768px) {
+    .postImg {
+      height: 250px;
+    }
+    .postTitle h2 {
+    }
+  }
   .comment {
     h5 {
       color: $O;
@@ -205,7 +169,11 @@ $O: #fa5d07;
       }
     }
   }
-
+  @media screen and (max-width: 768px) {
+    .comment h5 {
+      text-align: center;
+    }
+  }
   .postComment {
     h5 {
       color: $O;
@@ -244,6 +212,12 @@ $O: #fa5d07;
       border: none;
       color: $Lg;
       padding: 10px 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .postcommentTitle h5 {
+        text-align: center;
+      }
     }
   }
 }

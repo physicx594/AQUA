@@ -78,7 +78,7 @@ export const addContentCommentsDataAsync = (commentsData, callback) => {
 
     const response = await fetch(request)
     const data = await response.json()
-    console.log('res data', data)
+    // console.log('res data', data)
 
     dispatch(addContentCommentsData(data))
 

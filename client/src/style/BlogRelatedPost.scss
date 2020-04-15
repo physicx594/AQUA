@@ -42,3 +42,14 @@ $O: #fa5d07;
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .relatedpostTitle{
+    text-align: center;
+  }
+  ul{
+    justify-content: center;
+    p{
+      text-align: center;
+    }
+  }
+}

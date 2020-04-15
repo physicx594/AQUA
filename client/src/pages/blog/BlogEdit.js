@@ -9,6 +9,7 @@ import { getBlogDataAsync, editContentDataAsync} from '../../actions/blog/blog_A
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import BlogTitleBar from '../../components/blog/BlogTitleBar'
 import BlogRside from '../../components/blog/BlogRside'
 import BlogRelatedPost from '../../components/blog/BlogRelatedPost'
 
@@ -20,7 +21,7 @@ import addImg from '../../image/image.png'
 import Swal from 'sweetalert2'
 
 
-function BlogAdd(props) {
+function BlogEdit(props) {
   const [blogData, setBlogData] = useState([])
   useEffect(() => {
     props.getBlogDataAsync()
@@ -119,24 +120,9 @@ function BlogAdd(props) {
   return (
     <>
       <Header />
-      {/* <!-- titlebar --> */}
-      <div className="titlebarFix"></div>
-      <div className="titlebar">
-        <div className="container">
-          <h2>部落格</h2>
-          <ul>
-            <li>
-              <Link to="/blog">文章列表</Link>
-            </li>
-            <li>
-              <Link to=""> > </Link>
-            </li>
-            <li>
-              <Link to="">修改文章</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <BlogTitleBar />
+
+
       <div className="container rao">
         {/* <!--cardContent--> */}
         <div className="row addContent">
@@ -258,5 +244,5 @@ const mapStateToProps = store => {
 const mapDispatchToProps = dispatch => {
   return bindActionCreators({ getBlogDataAsync, editContentDataAsync}, dispatch)
 }
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(BlogAdd))
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(BlogEdit))
 // export default BlogAdd

@@ -13,7 +13,7 @@ import { animation } from 'react-reveal/globals'
 
 function BlogRside(props) {
 
-  const re = e =>{
+  const goTop = e =>{
     // if( window.scrollTo(0, 700)< )
     window.scrollTo(0, 0)
   }
@@ -27,7 +27,7 @@ function BlogRside(props) {
   return (
     <>
       <div className="col-md-4 rSide ">
-        <p className="justify-content-start d-flex">最新文章</p>
+        <p >最新文章</p>
         <div className="newsPost  rounded-lg mb-5">
           {/* <!--newPost--> */}
           {props.blogData.newpost ? (props.blogData.newpost.map((value , index)=>{
@@ -67,7 +67,7 @@ function BlogRside(props) {
         </div>
         {/* <!--tag--> */}
         <div className="popularTag">
-          <p className="justify-content-start d-flex">熱門標籤</p>
+          <p >熱門標籤</p>
           <div>
             <ul className="justify-content-start d-flex">
             {tagNameData ? tagNameData.map((value , index)=>{
@@ -90,7 +90,7 @@ function BlogRside(props) {
         <button 
                 className="scrolltop"
                 onClick={e => {
-                  re(e)
+                  goTop(e)
               }}
         >
         <i class="fas fa-angle-up fa-2x	"></i>        

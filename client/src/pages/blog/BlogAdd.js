@@ -9,6 +9,7 @@ import { getBlogDataAsync, addContentDataAsync} from '../../actions/blog/blog_Ac
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import BlogTitleBar from '../../components/blog/BlogTitleBar'
 import BlogRside from '../../components/blog/BlogRside'
 import BlogRelatedPost from '../../components/blog/BlogRelatedPost'
 
@@ -17,6 +18,7 @@ import '../../style/BlogAdd.scss'
 import addImg from '../../image/imgicon.png'
 import CKEditor from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+
 
 
 function BlogAdd(props) {
@@ -87,24 +89,8 @@ function BlogAdd(props) {
   return (
     <>
       <Header />
-      {/* <!-- titlebar --> */}
-      <div className="titlebarFix"></div>
-      <div className="titlebar">
-        <div className="container">
-          <h2>部落格</h2>
-          <ul>
-            <li>
-              <Link to="/blog">文章列表 </Link>
-            </li>
-            <li>
-              <Link> > </Link>
-            </li>
-            <li>
-              <Link to="/blogadd">新增文章</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <BlogTitleBar />
+
       <div className="container rao">
         {/* <!--cardContent--> */}
         <div className="row add_content">

@@ -8,7 +8,7 @@ import { getBlogDataAsync, getBlogCommentsDataAsync, addContentCommentsDataAsync
 
 
 import Header from '../../components/Header'
-import Banner from '../../components/Banner'
+import BlogTitleBar from '../../components/blog/BlogTitleBar'
 import Footer from '../../components/Footer'
 import BlogRside from '../../components/blog/BlogRside'
 import ScrollToTop from '../../components/blog/ScrollToTop'
@@ -43,13 +43,6 @@ function BlogContent(props) {
     props.getBlogCommentsDataAsync()
     props.addContentCommentsDataAsync()
   }, [])
-
-
-
-  // console.log(getBlogCommentsDataAsync)
-
-  console.log(props.match.params.id)
-
 
   const handleSubmit = e=>{
     let error = false
@@ -92,36 +85,11 @@ function BlogContent(props) {
     relatedPostData = relatedPostData.slice(0,3);
   }
 
-  console.log(like)
   return (
     <>
       <Header />
       {/* <!-- titlebar --> */}
-      <div className="titlebarFix"></div>
-      <div className="titlebar">
-        <div className="container">
-          <p>部落格</p>
-
-              {props.blogData.result ? (props.blogData.result.map((value , index)=>{
-              if( value.id==props.match.params.id)
-              return (
-          <ul key = {index}>
-            <li>
-              <Link to="/blog">文章列表</Link>
-            </li>
-            <li>
-              <Link >></Link>
-            </li>
-            <li>
-              <Link to={'/blog/'+value.id}>{value.blogTitle}</Link>
-            </li>
-          </ul>
-          )}
-            )) : ''}
-
-        </div>
-      </div>
-
+      <BlogTitleBar />
       <div className="container rao">
 
         {/* <!--blogContent--> */}
@@ -198,7 +166,6 @@ function BlogContent(props) {
                 <h5>評論</h5>
             </div>
             {props.blogCommentsData.result ? props.blogCommentsData.result.map((value, index) => {
-              console.log(value)
               if( value.blogId==props.match.params.id)
                return (
             <>

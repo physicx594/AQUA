@@ -51,12 +51,11 @@ html {
     }
   }
 
-  @media screen and (max-width: 576px) {
-    .category {
-      width: 300px;
-      text-align: center;
-      flex-wrap: wrap;
-    }
+  @media screen and (max-width: 768px) {
+      ul{
+        max-width: auto;
+        flex-wrap: wrap;
+      }
   }
 
   .lCard,
@@ -115,7 +114,7 @@ html {
     }
   }
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 768px) {
     .cardContent {
       flex-direction: column;
       margin-right: 20px;
@@ -123,12 +122,6 @@ html {
     }
   }
 
-  @media screen and (max-width: 576px) {
-    .rSide {
-      padding: 20px;
-      margin-bottom: 30px;
-      order: -1;
-    }
-  }
+
 
 }

@@ -60,6 +60,15 @@ function Blog(props) {
     })
   }, [props.blogData])
 
+  $(window).scroll(function(){
+    if($(this).scrollTop()>500){
+      // $('.scrolltop').addClass('active')
+      $('.scrolltop').fadeIn('fast')
+    }else{
+      $('.scrolltop').stop().fadeOut('fast')
+    }
+  })
+
   return (
     <>
       <Header />
@@ -68,9 +77,9 @@ function Blog(props) {
         <ScrollToTop>
           {/* <!--category--> */}
           <div className="row">
-            <div className="col-sm-12 d-flex justify-content-center">
+            <div className="col-sm-12 ">
               <div className="category  ">
-                <ul className="d-flex justify-content-center">
+                <ul className=" d-flex justify-content-center">
                   <Jump>
                     <Link to="/blogadd" className="badge badge-pill  addPost">
                       發文
