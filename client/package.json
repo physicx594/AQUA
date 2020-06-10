@@ -2,7 +2,7 @@
   "name": "aqua_react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://physicx594.github.io/AQUA",
+  "homepage": "https://physicx594.github.io/AQUA/blog",
   "dependencies": {
     "@babel/plugin-transform-react-jsx-development": "^7.9.0",
     "@ckeditor/ckeditor5-build-classic": "^18.0.0",
