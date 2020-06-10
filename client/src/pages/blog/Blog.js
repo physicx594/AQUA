@@ -34,6 +34,7 @@ function Blog(props) {
     })
     ////為被點擊的目標新增active
     event.target.classList.add('active-rao')
+    console.log(this)
   }
 
   function getCategoryNameData() {
@@ -60,12 +61,14 @@ function Blog(props) {
     })
   }, [props.blogData])
 
-  $(window).scroll(function(){
-    if($(this).scrollTop()>500){
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 500) {
       // $('.scrolltop').addClass('active')
       $('.scrolltop').fadeIn('fast')
-    }else{
-      $('.scrolltop').stop().fadeOut('fast')
+    } else {
+      $('.scrolltop')
+        .stop()
+        .fadeOut('fast')
     }
   })
 
@@ -151,7 +154,6 @@ function Blog(props) {
                                       'http://localhost:5000/images/blogImg/' +
                                       value.blogImages
                                     }
-                                    alt="image"
                                   />
                                 </RcViewer>
                                 <div className="card-body">

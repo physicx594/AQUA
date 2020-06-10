@@ -273,7 +273,24 @@ console.log(abc)
 })
 
 
+router.post('/del/:id',(req,res)=>{
+    const output = {
+        success:false,
+        error:'',
+        status:0,
+        body:req.body,
+        result: {}
+    };
 
+    if(req.params.coup_cate_id === "coup001") {
+        const sql = `DELETE FROM coup01_allorder WHERE coup_id = ${req.params.coup_id}`
+        db.query(sql,(error,result)=>{
+            if (error) console.log(error)
+            res.redirect('/seller/coupon')
+        })
+    }
+  
+})
 // router.post('/del/:id', (req, res)=>{
 //     const sql = "DELETE FROM `blog` WHERE `id`=?";
 //     db.queryAsync(sql, [req.params.id])
@@ -287,9 +304,9 @@ console.log(abc)
 
 
 
-router.get('/admin1/:name?/:age?', (req, res)=>{
-    res.json(req.params);
+// router.get('/admin1/:name?/:age?', (req, res)=>{
+//     res.json(req.params);
 
-})
+// })
 
 module.exports = router;
