@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,gBAAgB,CAAC;EACf,gBAAgB,EAAE,eAAe;EACjC,KAAK,ECDU,OAAO;EDEtB,WAAW,EAAE,IAAI;CAClB;;AACD,AAAA,YAAY,CAAC;EACX,MAAM,EAAE,OAAO;CAChB",
+    "sources": [
+        "AllSeller.scss",
+        "../../../../style/variable.scss"
+    ],
+    "names": [],
+    "file": "AllSeller.css"
+}

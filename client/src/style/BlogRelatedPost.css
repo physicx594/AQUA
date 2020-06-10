@@ -36,4 +36,18 @@
   height: 100%;
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .relatedpostTitle {
+    text-align: center;
+  }
+  ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  ul p {
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=BlogRelatedPost.css.map */

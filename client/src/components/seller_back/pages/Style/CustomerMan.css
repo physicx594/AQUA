@@ -19,7 +19,7 @@
   background-size: 3rem 3rem;
   background-repeat: no-repeat;
   background-color: transparent;
-  background-image: url(../../../../../../src/image/customer/user.svg);
+  background-image: url(../../../../../src/image/customer/user.svg);
   -webkit-transition: ease 0.5;
   transition: ease 0.5;
 }
@@ -28,7 +28,7 @@
   background-size: 3rem 3rem;
   background-repeat: no-repeat;
   background-color: transparent;
-  background-image: url(../../../../../../src/image/customer/sale-tag.png);
+  background-image: url(../../../../../src/image/customer/sale-tag.png);
   -webkit-transition: ease 0.5;
   transition: ease 0.5;
 }

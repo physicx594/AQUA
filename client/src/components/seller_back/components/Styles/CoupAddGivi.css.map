@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,cAAc,CAAC;EACb,gBAAgB,EAAE,0CAA0C;EAC5D,eAAe,EAAE,KAAK;CACvB;;AACD,AACE,iBADe,CACf,KAAK,CAAA,AAAA,IAAC,CAAK,MAAM,AAAX,EAAa;EACjB,KAAK,ECLQ,OAAO;EDMpB,gBAAgB,EAAE,KAAK;CACxB;;AAJH,AAKE,iBALe,CAKf,KAAK,CAAA,AAAA,IAAC,CAAK,QAAQ,AAAb,EAAe;EACnB,KAAK,ECTQ,OAAO;EDUpB,gBAAgB,EAAE,KAAK;CACxB;;AARH,AASE,iBATe,CASf,MAAM,CAAC;EACL,gBAAgB,ECbH,OAAO,CDac,UAAU;CAC7C",
+    "sources": [
+        "CoupAddGivi.scss",
+        "../../../../style/variable.scss"
+    ],
+    "names": [],
+    "file": "CoupAddGivi.css"
+}
